@@ -2,6 +2,10 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<!-- adding javascript stylesheet -->
+<link rel="stylesheet" type="text/javascript" href="mystyles2.js"
+
 </head>
 <body>
 
@@ -47,76 +51,279 @@ Select the classes you have taken or are currently taking
     <th>Course Name</th>
     <th>Credits</th>
   </tr>
+
+  <!-- Added ID to objects, refer to class number ex. 202-->
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 110</td>
+    <td><input type="checkbox" name="cs201" id="201" onchange="toggleDisabled201up(this.checked)"/></td>
+    <td>CMSC 201</td>
     <td>3 credits</td>
   </tr>
+  
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 220</td>
+    <td><input type="checkbox" name="cs202" id="202" disabled="disabled" onchange="toggleDisabled304(this.checked); toggleDisabled300up(this.checked)"/></td>
+    <td>CMSC 202</td>
     <td>4 credits</td>
   </tr>
+
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 300</td>
+    <td><input type="checkbox" name="cs203" id="203" disabled="disabled" onchange="toggleDisabled300up(this.checked)"/></td>
+    <td>CMSC 203</td>
+    <td>3 credits</td>
+  </tr>
+
+  <tr>
+    <td><input type="checkbox" name="cs304" id="304" disabled="disabled"/></td>
+    <td>CMSC 304</td>
+    <td>3 credits</td>
+  </tr>
+
+  <tr>
+      <td><input type="checkbox" name="cs313" id="313" disabled="disabled" onchange="toggleDisabled411(this.checked)"/></td>
+      <td>CMSC 313</td>
+      <td>3 credits</td>
+  </tr>
+
+  <tr>
+    <td><input type="checkbox" name="cs331" id="331" disabled="disabled" onchange="toggledDisabled331(this.checked)"/></td>
+    <td>CMSC 331</td>
+    <td>3 credits</td>
+  </tr>
+
+  <tr>
+    <td><input type="checkbox" name="cs341" id="341" disabled="disabled" onchange="toggledDisabled341(this.checked)"/></td>
+    <td>CMSC 341</td>
+    <td>3 credits</td>
+  </tr>
+
+  <tr>
+    <td><input type="checkbox" name="cs411" id="411" disabled="disabled"></td>
+    <td>CMSC 411</td>
+    <td>3 credits</td>
+  </tr>
+
+  <tr>
+    <td><input type="checkbox" name="cs421" id="421" disabled="disabled"></td>
+    <td>CMSC 421</td>
+    <td>3 credits</td>
+  </tr>
+
+  <tr>
+    <td><input type="checkbox" name="cs441" id="441" disabled="disabled"></td>
+    <td>CMSC 441</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs447" id="447" disabled="disabled"></td>
+    <td>CMSC 447</td>
+    <td>3 credits</td>
+  </tr>
+
+  <!--Beginning of list of elective computer science classes-->
+
+  <tr>
+    <td><input type="checkbox" name="cs426" id="426" disabled="disabled"></td>
+    <td>CMSC 426</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs427" id="427" disabled="disabled"></td>
+    <td>CMSC 427</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs431" id="431" disabled="disabled"></td>
+    <td>CMSC 431</td>
+    <td>3 credits</td>
+  </tr>
+
+    <td><input type="checkbox" name="cs432" id="432" disabled="disabled"></td>
+    <td>CMSC 432</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs433" id="433" disabled="disabled"></td>
+    <td>CMSC 433</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs435" id="435" disabled="disabled"></td>
+    <td>CMSC 435</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs436" id="436" disabled="disabled"></td>
+    <td>CMSC 436</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs437" id="437" disabled="disabled"></td>
+    <td>CMSC 437</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs442" id="442" disabled="disabled"></td>
+    <td>CMSC 442</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs443" id="443" disabled="disabled"></td>
+    <td>CMSC 443</td>
     <td>3 credits</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name="vehicle1" value="Bike"></td>
-    <td>CMSC 400</td>
+    <td><input type="checkbox" name="cs444" id="444" disabled="disabled"></td>
+    <td>CMSC 444</td>
     <td>3 credits</td>
   </tr>
-</table>
+  <tr>
+    <td><input type="checkbox" name="cs446" id="446" disabled="disabled"></td>
+    <td>CMSC 446</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs448" id="448" disabled="disabled"></td>
+    <td>CMSC 448</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs451" id="451" disabled="disabled"></td>
+    <td>CMSC 451</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs452" id="452" disabled="disabled"></td>
+    <td>CMSC 452</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs453" id="453" disabled="disabled"></td>
+    <td>CMSC 453</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs455" id="455" disabled="disabled"></td>
+    <td>CMSC 455</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs457" id="457" disabled="disabled"></td>
+    <td>CMSC 457</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs461" id="461" disabled="disabled"></td>
+    <td>CMSC 461</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs465" id="465" disabled="disabled"></td>
+    <td>CMSC 465</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs466" id="466" disabled="disabled"></td>
+    <td>CMSC 466</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs471" id="471" disabled="disabled"></td>
+    <td>CMSC 471</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs473" id="473" disabled="disabled"></td>
+    <td>CMSC 473</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs475" id="475" disabled="disabled"></td>
+    <td>CMSC 475</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs476" id="476" disabled="disabled"></td>
+    <td>CMSC 476</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs477" id="477" disabled="disabled"></td>
+    <td>CMSC 477</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs478" id="478" disabled="disabled"></td>
+    <td>CMSC 478</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs479" id="479" disabled="disabled"></td>
+    <td>CMSC 479</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs478" id="481" disabled="disabled"></td>
+    <td>CMSC 481</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs483" id="483" disabled="disabled"></td>
+    <td>CMSC 483</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs484" id="484" disabled="disabled"></td>
+    <td>CMSC 484</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs486" id="486" disabled="disabled"></td>
+    <td>CMSC 486</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs487" id="487" disabled="disabled"></td>
+    <td>CMSC 487</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs491" id="491" disabled="disabled"></td>
+    <td>CMSC 491</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs493" id="493" disabled="disabled"></td>
+    <td>CMSC 493</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs495" id="495" disabled="disabled"></td>
+    <td>CMSC 495</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs498" id="498" disabled="disabled"></td>
+    <td>CMSC 498</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs499" id="499" disabled="disabled"></td>
+    <td>CMSC 499</td>
+    <td>3 credits</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="cs400+" id="400+" disabled="disabled"></td>
+    <td>CMSC 400+</td>
+    <td>3 credits</td>
+  </tr>
+  </table>
 </br></br></br>
 
 <div id="submitBar"></div>
 <input type="button" class="submitButton" value="Submit">
 </form>
+
+    <script type="text/javascript" src="mystyles2.js"></script>
+
+
 </body>
 </html>
