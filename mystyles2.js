@@ -13,127 +13,7 @@ function checkAndDisable300(_checked) {
     document.getElementById('345').disabled = true;
 }
 
-/*
-//checkAndDisable is split between six parts for easier readability
-//all classes are accounted for; if not in diagram, it is in group5; others
-//group1 = involved strictly with 331
-
-function checkAndDisable400p1() {
-    document.getElementById('431').checked = false;
-    document.getElementById('432').checked = false;
-    document.getElementById('433').checked = false;
-    document.getElementById('473').checked = false;
-
-    document.getElementById('431').disabled = true;
-    document.getElementById('431').disabled = true;
-    document.getElementById('433').disabled = true;
-    document.getElementById('473').disabled = true;
-}
-
-//group2 = involved strictly with 341
-function checkAndDisable400p2() {
-    document.getElementById('481').checked = false;
-    document.getElementById('461').checked = false;
-    document.getElementById('421').checked = false;
-    document.getElementById('475').checked = false;
-    document.getElementById('476').checked = false;
-    document.getElementById('456').checked = false;
-    document.getElementById('455').checked = false;
-    document.getElementById('453').checked = false;
-    document.getElementById('443').checked = false;
-    document.getElementById('441').checked = false;
-    document.getElementById('437').checked = false;
-    document.getElementById('436').checked = false;
-    document.getElementById('427').checked = false;
-    document.getElementById('471').checked = false;
-    document.getElementById('435').checked = false;
-    document.getElementById('431').checked = false;
-
-    document.getElementById('481').disabled = true;
-    document.getElementById('461').disabled = true;
-    document.getElementById('421').disabled = true;
-    document.getElementById('475').disabled = true;
-    document.getElementById('476').disabled = true;
-    document.getElementById('456').disabled = true;
-    document.getElementById('455').disabled = true;
-    document.getElementById('453').disabled = true;
-    document.getElementById('443').disabled = true;
-    document.getElementById('441').disabled = true;
-    document.getElementById('437').disabled = true;
-    document.getElementById('436').disabled = true;
-    document.getElementById('427').disabled = true;
-    document.getElementById('471').disabled = true;
-    document.getElementById('435').disabled = true;
-    document.getElementById('431').disabled = true;
-
-}
-
-//group3 = involved strictly with 471
-function checkAndDisable400p3() {
-    document.getElementById('493').checked = false;
-    document.getElementById('479').checked = false;
-    document.getElementById('478').checked = false;
-    document.getElementById('477').checked = false;
-
-    document.getElementById('493').disabled = true;
-    document.getElementById('479').disabled = true;
-    document.getElementById('478').disabled = true;
-    document.getElementById('477').disabled = true;
-}
-
-//group4 = involved strictly with 421
-function checkAndDisable400p4() {
-    document.getElementById('487').checked = false;
-    document.getElementById('483').checked = false;
-    document.getElementById('426').checked = false;
-
-    document.getElementById('487').disabled = true;
-    document.getElementById('483').disabled = true;
-    document.getElementById('426').disabled = true;
-}
-
-//group5 = not involved in diagram
-function checkAndDisable400p5() {
-    document.getElementById('404').checked = false;
-    document.getElementById('442').checked = false;
-    document.getElementById('444').checked = false;
-    document.getElementById('446').checked = false;
-    document.getElementById('448').checked = false;
-    document.getElementById('491').checked = false;
-    document.getElementById('495').checked = false;
-    document.getElementById('498').checked = false;
-    document.getElementById('499').checked = false;
-
-    document.getElementById('404').disabled = true;
-    document.getElementById('442').disabled = true;
-    document.getElementById('444').disabled = true;
-    document.getElementById('446').disabled = true;
-    document.getElementById('448').disabled = true;
-    document.getElementById('491').disabled = true;
-    document.getElementById('495').disabled = true;
-    document.getElementById('498').disabled = true;
-    document.getElementById('499').disabled = true;
-}
-
-//group6 = involved strictly with 203
-function checkAndDisable400p6() {
-    document.getElementById('451').checked = false;
-    document.getElementById('452').checked = false;
-    document.getElementById('457').checked = false;
-
-    document.getElementById('451').disabled = true;
-    document.getElementById('452').disabled = true;
-    document.getElementById('457').disabled = true;
-}
-
-/*  must STILL include:
-    202 -> 484, 486
-    313 -> 411, 435
-    481 -> 465, 466 */
-    
-//unchecks and disables everything
-
-
+//unchecks and disables everything in 400's range
 function checkAndDisable400(_checked) {
     /* checkAndDisable400p1();
     checkAndDisable400p2();
@@ -162,6 +42,7 @@ function checkAndDisable400(_checked) {
     document.getElementById('421').checked = false;
     document.getElementById('475').checked = false;
     document.getElementById('476').checked = false;
+    document.getElementById('457').checked = false;
     document.getElementById('456').checked = false;
     document.getElementById('455').checked = false;
     document.getElementById('453').checked = false;
@@ -182,6 +63,7 @@ function checkAndDisable400(_checked) {
     document.getElementById('421').disabled = true;
     document.getElementById('475').disabled = true;
     document.getElementById('476').disabled = true;
+    document.getElementById('457').disabled = true;
     document.getElementById('456').disabled = true;
     document.getElementById('455').disabled = true;
     document.getElementById('453').disabled = true;
