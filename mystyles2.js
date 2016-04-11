@@ -276,7 +276,10 @@ function toggleDisabled300up(_checked) {
         document.getElementById('331').disabled = false;
         document.getElementById('341').disabled = false;
         document.getElementById('451').disabled = false;
-        
+        document.getElementById('491').disabled = false;
+        document.getElementById('495').disabled = false;
+        document.getElementById('498').disabled = false;
+        document.getElementById('499').disabled = false;
     } else {
         //checkAndDisable300();
         document.getElementById('313').checked = false;
