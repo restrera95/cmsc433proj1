@@ -1,18 +1,15 @@
 <html>
+<!--
+	This code finds the courses a student needs, creates a database, and adds
+the student and their courses to the database.
+
+	-->
 <head>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<title>CMSC Course Guide</title>
 </head>
-
 <body>
-
 <?php
-/*
-
-This code finds the courses a student needs, creates a database, and adds
-the student and their courses to the database.
-
-*/
 
 // Retrieve student information
 $fname = $_POST["fname"];
@@ -224,7 +221,7 @@ for($x=0; $x<$needlength; $x++){
 }
 echo '</table>';
 
-/*
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -240,7 +237,7 @@ if ($conn->connect_error) {
 
 // Add student to the table
 $sql = "INSERT INTO Students (studentid, firstname, lastname, email)
-VALUES ($studentid, $firstname, $lastname, $email)";
+VALUES ($sid, $fname, $lname, $email)";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
@@ -248,22 +245,20 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+// Add all of student's courses
+$takenlength = count($taken);
+for($i=0; $i<$takenlength; $i++){
+	$sql = "INSERT INTO Student_Courses (studentid, courseid) VALUES ($sid, $taken[$i])";
 
-// Add a student's course (do this 3-4 times)
-$sql = "INSERT INTO Student_Courses (studentid, courseid)
-VALUES ($studentid, $courseid)";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+	if ($conn->query($sql) === TRUE) {
+    	echo "New record created successfully";
+	}
+	else {
+    	echo "Error: " . $sql . "<br>" . $conn->error;
+	}
 }
-
-
 
 $conn->close();
-*/
 ?>
-
 </body>
 </html>
