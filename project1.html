@@ -2,8 +2,6 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
-<!-- adding javascript stylesheet -->
-<!--<link rel="stylesheet" type="text/javascript" href="mystyles2.js">-->
 <title>CMSC Course Guide</title>
 </head>
 
@@ -48,7 +46,6 @@ Select the classes you have taken or are currently taking:
     <th>Credits</th>
   </tr>
 
-  <!-- Added ID to objects, refer to class number ex. 202-->
   <tr>
     <td><input type="checkbox" name="cs201" id="201" onchange="toggleDisabled201up(this.checked); checkAndDisable300(this.checked); checkAndDisable400(this.checked);"/></td>
     <td>CMSC 201 - Computer Science I</td>
@@ -133,8 +130,9 @@ Select the classes you have taken or are currently taking:
     <td>4 credits</td>
   </tr>
 </table><br><br>
+
+<!-- Electives -->
 <table id="table1">
-  <!--Beginning of list of elective computer science classes-->
   <tr>
     <td><input type="checkbox" name="cs345" id="345" disabled="disabled" onchange="toggledDisabled448(this.checked);"></td>
     <td>CMSC 345 - Software Design and Development</td>
@@ -347,7 +345,6 @@ Select the classes you have taken or are currently taking:
 <input type="submit" class="submitButton" value="Submit">
 </form>
 
-<!--the scripting-->
 <script type="text/javascript" src="mystyles2.js"></script>
 
 </body>
