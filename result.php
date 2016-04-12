@@ -6,8 +6,14 @@ the student and their courses to the database.
 
 */
 
-// This will include all of the student's validated information and courses
-//include 'project1.php';
+$fname = $lname = $email = $sid;
+$fname = $_POST["fname"];
+$lname = $_POST["lname"];
+$email = $_POST["email"];
+$sid = $_POST["sid"];
+
+
+
 
 // Add all courses student took to an array
 $cs201 = $_POST["cs201"];
@@ -30,7 +36,6 @@ if (!empty($_POST["cs202"])) {
 $required = array("cs201","cs202","cs203","cs304","cs313","cs331","cs341","cs411","cs421","cs441","cs447","ma151","ma152","ma221","st355");
 $reqlength = count($required);
 
-echo $reqlength;
 // Check the required courses for courses the student has not taken
 //	and put them in an array of needed courses
 /*
@@ -42,6 +47,9 @@ for($x=0; $x<$reqlength; $x++){
 */
 
 // Register student for 3 needed courses?
+
+
+
 
 
 /*
