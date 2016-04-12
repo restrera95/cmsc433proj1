@@ -3,7 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 
-table {
+#table1 {
     position: relative;
     left: 30px;
     border-collapse: collapse;
@@ -12,22 +12,38 @@ table {
     font-family: Georgia;
 }
 
+#table2 {
+    border-collapse: collapse;
+    border-style: solid;
+    width: 40%;
+    font-family: Georgia;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#t1{
+    text-align: center;
+    padding: 8px;
+}
+
 th, td {
     text-align: left;
     padding: 8px;
 }
 
-
-
 td:first-child { width: 10%;}
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){ background-color: #f2f2f2 }
 
 th {
     background-color: #5E9DA0;
     color: white;
 }
 
+h2 {
+  text-align:center;
+  font-family: Baskerville;
+}
 
 .textForm {
    font-family: PT Sans;
@@ -37,7 +53,6 @@ th {
    text-align: right
    float: left;
    left: 30px;
-   
 }
 
 .texty {
