@@ -332,11 +332,11 @@ function toggledDisabled452(_checked) {
 function toggledDisabled45356() {
     var cs341 = document.getElementById("341").checked;
     var ma221 = document.getElementById("221").checked;
+    var ma151 = document.getElementById("151").checked;
     var ma152 = document.getElementById("152").checked;
-    var ma142 = document.getElementById("142").checked;
 
     if (cs341 == true && ma221 == true) {
-        if (ma142 == true || ma152 == true) {
+        if (ma151 == true || ma152 == true) {
             document.getElementById('453').disabled = false;
             document.getElementById('455').disabled = false;
             document.getElementById('456').disabled = false;
