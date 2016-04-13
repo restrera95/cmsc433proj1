@@ -205,13 +205,27 @@ for($x=0; $x<$reqlength; $x++){
 	}
 }
 
+// Determine how many 400 level electives needed
+$upperLevels = 5;
+$needlength = count($need);
+for($x=0; $x<$needlength; $x++){
+	if(strpos($need[$x], "CMSC-4")){
+		$upperLevels--;
+	}
+}
+
+// Add necessary electives
+for($x=0; $x<$upperLevels; $x++){
+	array_push($need, "CMSC-4XX");
+}
+
 // Print out table of needed courses
+$needlength = count($need);
 echo '<table id="table2">';
 echo '<tr>';
 echo '<th id="t1">Courses Needed</th>';
 echo '</tr>';
 
-$needlength = count($need);
 for($x=0; $x<$needlength; $x++){
 	echo '<tr>';
 	echo '<td id="t1">';
