@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 } 
 
 // Add courses to the table
-$courseid = "CMSC201";
+$courseid = "CMSC-201";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -26,7 +26,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC202";
+$courseid = "CMSC-202";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -35,7 +35,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC203";
+$courseid = "CMSC-203";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -44,7 +44,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC304";
+$courseid = "CMSC-304";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -53,7 +53,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC313";
+$courseid = "CMSC-313";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -62,7 +62,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC331";
+$courseid = "CMSC-331";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -71,7 +71,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC341";
+$courseid = "CMSC-341";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -80,7 +80,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC411";
+$courseid = "CMSC-411";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -89,7 +89,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC421";
+$courseid = "CMSC-421";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -98,7 +98,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC441";
+$courseid = "CMSC-441";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -107,7 +107,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC447";
+$courseid = "CMSC-447";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -116,7 +116,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "MATH151";
+$courseid = "MATH-151";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -125,7 +125,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "MATH152";
+$courseid = "MATH-152";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -134,7 +134,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "MATH221";
+$courseid = "MATH-221";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -143,7 +143,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "STAT355";
+$courseid = "STAT-355";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -152,7 +152,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC345";
+$courseid = "CMSC-345";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -161,7 +161,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC404";
+$courseid = "CMSC-404";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -170,7 +170,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC426";
+$courseid = "CMSC-426";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -179,7 +179,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC427";
+$courseid = "CMSC-427";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -188,7 +188,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC431";
+$courseid = "CMSC-431";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -197,7 +197,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC432";
+$courseid = "CMSC-432";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -206,7 +206,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC433";
+$courseid = "CMSC-433";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -215,7 +215,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC435";
+$courseid = "CMSC-435";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -224,7 +224,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC436";
+$courseid = "CMSC-436";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -233,7 +233,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC437";
+$courseid = "CMSC-437";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -242,7 +242,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC442";
+$courseid = "CMSC-442";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -251,7 +251,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC443";
+$courseid = "CMSC-443";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -260,7 +260,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC444";
+$courseid = "CMSC-444";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -269,7 +269,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC446";
+$courseid = "CMSC-446";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -278,7 +278,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC448";
+$courseid = "CMSC-448";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -287,7 +287,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC451";
+$courseid = "CMSC-451";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -296,7 +296,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC452";
+$courseid = "CMSC-452";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -305,7 +305,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC453";
+$courseid = "CMSC-453";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -314,7 +314,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC455";
+$courseid = "CMSC-455";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -323,7 +323,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC456";
+$courseid = "CMSC-456";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -332,7 +332,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC457";
+$courseid = "CMSC-457";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -341,7 +341,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC461";
+$courseid = "CMSC-461";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -350,7 +350,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC465";
+$courseid = "CMSC-465";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -359,7 +359,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC466";
+$courseid = "CMSC-466";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -368,7 +368,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC471";
+$courseid = "CMSC-471";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -377,7 +377,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC473";
+$courseid = "CMSC-473";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -386,7 +386,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC475";
+$courseid = "CMSC-475";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -395,7 +395,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC476";
+$courseid = "CMSC-476";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -404,7 +404,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC477";
+$courseid = "CMSC-477";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -413,7 +413,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC478";
+$courseid = "CMSC-478";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -422,7 +422,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC479";
+$courseid = "CMSC-479";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -431,7 +431,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC481";
+$courseid = "CMSC-481";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -440,7 +440,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC483";
+$courseid = "CMSC-483";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -449,7 +449,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC484";
+$courseid = "CMSC-484";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -458,7 +458,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC486";
+$courseid = "CMSC-486";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -467,7 +467,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC487";
+$courseid = "CMSC-487";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -476,7 +476,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC491";
+$courseid = "CMSC-491";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -485,7 +485,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC493";
+$courseid = "CMSC-493";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -494,7 +494,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC495";
+$courseid = "CMSC-495";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -503,7 +503,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC498";
+$courseid = "CMSC-498";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
@@ -512,7 +512,7 @@ if ($conn->query($sql) === TRUE) {
     echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
 
-$courseid = "CMSC499";
+$courseid = "CMSC-499";
 $sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
