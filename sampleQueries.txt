@@ -1,0 +1,5 @@
+// Show which courses student w/ id ZB78459 have taken
+SELECT courseid FROM Student_Courses WHERE studentid = 'ZB78459' 
+
+// Show which students have taken course courseid 'CMSC-201'
+SELECT studentid FROM Student_Courses WHERE courseid = 'CMSC-201'
