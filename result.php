@@ -2,11 +2,11 @@
 <!--
 	This code finds the courses a student needs, creates a database, and adds
 the student and their courses to the database.
-
 	-->
 <head>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<title>CMSC Course Guide</title>
+	<link rel="icon" type="image/ico" href="favicon.ico">
 </head>
 <body>
 <?php
@@ -235,6 +235,7 @@ for($x=0; $x<$needlength; $x++){
 }
 echo '</table>';
 
+// Database code
 
 $servername = "localhost";
 $username = "root";
@@ -248,7 +249,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-
 // Add student to the table
 $sql = "INSERT INTO Students (studentid, firstname, lastname, email)
 VALUES ('$sid', '$fname', '$lname', '$email')";
@@ -259,7 +259,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-// Add all of student's courses
+// Add all of student's courses taken
 $takenlength = count($taken);
 for($i=0; $i<$takenlength; $i++){
 	$sql = "INSERT INTO Student_Courses (studentid, courseid) VALUES ('$sid', '$taken[$i]')";
