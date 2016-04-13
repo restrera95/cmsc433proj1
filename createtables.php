@@ -18,14 +18,14 @@ if ($conn->connect_error) {
 
 // sql to create Students table
 $sql = "CREATE TABLE Students (
-studentid VARCHAR(7) UNSIGNED PRIMARY KEY, 
+studentid VARCHAR(7) PRIMARY KEY, 
 firstname VARCHAR(30) NOT NULL,
 lastname VARCHAR(30) NOT NULL,
-email VARCHAR(30),
+email VARCHAR(30)
 )";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Table Students created successfully";
+    echo "Table Students created successfully<br><br>";
 } else {
     echo "Error creating table: " . $conn->error;
 }
@@ -33,26 +33,26 @@ if ($conn->query($sql) === TRUE) {
 
 // sql to create Courses table
 $sql = "CREATE TABLE Courses (
-courseid VARCHAR(8) UNSIGNED PRIMARY KEY,
+courseid VARCHAR(8) PRIMARY KEY
 )";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Table Courses created successfully";
+    echo "Table Courses created successfully<br><br>";
 } else {
-    echo "Error creating table: " . $conn->error;
+    echo "<br><br>Error creating table: " . $conn->error;
 }
 
 
 // sql to create Student_Courses table
 $sql = "CREATE TABLE Student_Courses (
-studentid VARCHAR(7) UNSIGNED,
-courseid VARCHAR(8) UNSIGNED,
+studentid VARCHAR(7),
+courseid VARCHAR(8)
 )";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Table Student_Courses created successfully";
+    echo "Table Student_Courses created successfully<br><br>";
 } else {
-    echo "Error creating table: " . $conn->error;
+    echo "<br><br>Error creating table: " . $conn->error;
 }
 
 
