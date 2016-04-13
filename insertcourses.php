@@ -18,9 +18,8 @@ if ($conn->connect_error) {
 
 
 // Add course to the table
-$courseid = CMSC201;
-$sql = "INSERT INTO Courses (courseid)
-VALUES ($courseid)";
+$courseid = "CMSC201";
+$sql = "INSERT INTO Courses (courseid) VALUES ('$courseid')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";

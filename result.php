@@ -251,10 +251,10 @@ if ($conn->connect_error) {
 
 // Add student to the table
 $sql = "INSERT INTO Students (studentid, firstname, lastname, email)
-VALUES ($sid, $fname, $lname, $email)";
+VALUES ('$sid', '$fname', '$lname', '$email')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "New student created successfully<br><br>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -262,10 +262,10 @@ if ($conn->query($sql) === TRUE) {
 // Add all of student's courses
 $takenlength = count($taken);
 for($i=0; $i<$takenlength; $i++){
-	$sql = "INSERT INTO Student_Courses (studentid, courseid) VALUES ($sid, $taken[$i])";
+	$sql = "INSERT INTO Student_Courses (studentid, courseid) VALUES ('$sid', '$taken[$i]')";
 
 	if ($conn->query($sql) === TRUE) {
-    	echo "New record created successfully";
+    	echo "Student's course created successfully<br><br>";
 	}
 	else {
     	echo "Error: " . $sql . "<br>" . $conn->error;
