@@ -244,9 +244,11 @@ $dbname = "myDB";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    //die("Connection failed: " . $conn->connect_error);
+    die(); // Removed error text to hide it from users
 } 
 
 // Add student to the table
@@ -254,9 +256,11 @@ $sql = "INSERT INTO Students (studentid, firstname, lastname, email)
 VALUES ('$sid', '$fname', '$lname', '$email')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New student created successfully<br><br>";
+    //echo "New student created successfully<br><br>";
+    // Removed success text to hide it from users
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    //echo "Error: " . $sql . "<br>" . $conn->error;
+    // Removed error text to hide it from users
 }
 
 // Add all of student's courses taken
@@ -265,10 +269,12 @@ for($i=0; $i<$takenlength; $i++){
 	$sql = "INSERT INTO Student_Courses (studentid, courseid) VALUES ('$sid', '$taken[$i]')";
 
 	if ($conn->query($sql) === TRUE) {
-    	echo "Student's course created successfully<br><br>";
+    	//echo "Student's course created successfully<br><br>";
+    	// Removed success text to hide it from users
 	}
 	else {
-    	echo "Error: " . $sql . "<br>" . $conn->error;
+    	//echo "Error: " . $sql . "<br>" . $conn->error;
+    	// Removed error text to hide it from users
 	}
 }
 
