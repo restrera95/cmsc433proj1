@@ -17,9 +17,6 @@ $lname = $_POST["lname"];
 $email = $_POST["email"];
 $sid = $_POST["sid"];
 
-// Add all courses student took to an array
-$taken = array();
-
 $courseids = array("CMSC-201","CMSC-202","CMSC-203",
 	"CMSC-331","CMSC-341","CMSC-313","CMSC-304","CMSC-411","CMSC-421",
 	"CMSC-441","CMSC-447","MATH-151","MATH-152","MATH-221","STAT-355",
@@ -40,14 +37,15 @@ $coursedivids = array("cs201","cs202","cs203","cs304","cs313","cs331",
 	"cs481","cs483","cs484","cs486","cs487","cs491","cs493","cs495",
 	"cs498","cs499");
 
-// Get posted data for each course
+$taken = array();
 $courselength = count($courseids);
+
+// Add all courses student took to an array
 for($x=0; $x<$courselength; $x++){
 	if (!empty($_POST[$coursedivids[$x]])) {
 		array_push($taken, $courseids[$x]);
 	}
 }
-
 
 $required = array("CMSC-201","MATH-151","CMSC-202","CMSC-203","MATH-152",
 	"CMSC-331","CMSC-341","CMSC-313","MATH-221", "CMSC-304", "CMSC-411",
@@ -72,7 +70,7 @@ for($x=0; $x<$needlength; $x++){
 	}
 }
 
-// Add necessary electives
+// Add electives to needed courses
 for($x=0; $x<$upperLevels; $x++){
 	array_push($need, "CMSC-4XX");
 }

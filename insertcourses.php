@@ -16,7 +16,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-// Add courses to the table
+
 $courseids = array("CMSC-201","MATH-151","CMSC-202","CMSC-203","MATH-152",
 	"CMSC-331","CMSC-341","CMSC-313","MATH-221","CMSC-304","CMSC-411",
 	"STAT-355","CMSC-421","CMSC-441","CMSC-447","CMSC-345","CMSC-404",
@@ -28,6 +28,7 @@ $courseids = array("CMSC-201","MATH-151","CMSC-202","CMSC-203","MATH-152",
 	"CMSC-483","CMSC-484","CMSC-486","CMSC-487","CMSC-491","CMSC-493",
 	"CMSC-495","CMSC-498","CMSC-499");
 
+// Add courses to the table
 foreach($courseids as $class){
 	$sql = "INSERT INTO Courses (courseid) VALUES ('$class')";
 
