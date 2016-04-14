@@ -235,6 +235,11 @@ for($x=0; $x<$needlength; $x++){
 }
 echo '</table>';
 
+?>
+<br>
+<div id="classSection">Note: Any course labeled CMSC-4XX is any 400 level elective for Computer Science</div>
+
+<?php
 // Database code
 
 $servername = "localhost";
