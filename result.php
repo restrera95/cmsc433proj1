@@ -20,176 +20,34 @@ $sid = $_POST["sid"];
 // Add all courses student took to an array
 $taken = array();
 
-if (!empty($_POST["cs201"])) {
-	array_push($taken, "CMSC-201");
-}
-if (!empty($_POST["cs202"])) {
-	array_push($taken, "CMSC-202");
-}
-if (!empty($_POST["cs203"])) {
-	array_push($taken, "CMSC-203");
-}
-if (!empty($_POST["cs304"])) {
-	array_push($taken, "CMSC-304");
-}
-if (!empty($_POST["cs313"])) {
-	array_push($taken, "CMSC-313");
-}
-if (!empty($_POST["cs331"])) {
-	array_push($taken, "CMSC-331");
-}
-if (!empty($_POST["cs341"])) {
-	array_push($taken, "CMSC-341");
-}
-if (!empty($_POST["cs411"])) {
-	array_push($taken, "CMSC-411");
-}
-if (!empty($_POST["cs421"])) {
-	array_push($taken, "CMSC-421");
-}
-if (!empty($_POST["cs441"])) {
-	array_push($taken, "CMSC-441");
-}
-if (!empty($_POST["cs447"])) {
-	array_push($taken, "CMSC-447");
-}
-if (!empty($_POST["ma151"])) {
-	array_push($taken, "MATH-151");
-}
-if (!empty($_POST["ma152"])) {
-	array_push($taken, "MATH-152");
-}
-if (!empty($_POST["ma221"])) {
-	array_push($taken, "MATH-221");
-}
-if (!empty($_POST["st355"])) {
-	array_push($taken, "STAT-355");
+$courseids = array("CMSC-201","CMSC-202","CMSC-203",
+	"CMSC-331","CMSC-341","CMSC-313","CMSC-304","CMSC-411","CMSC-421",
+	"CMSC-441","CMSC-447","MATH-151","MATH-152","MATH-221","STAT-355",
+	"CMSC-345","CMSC-404","CMSC-426","CMSC-427","CMSC-431","CMSC-432",
+	"CMSC-433","CMSC-435","CMSC-436","CMSC-437","CMSC-442","CMSC-443",
+	"CMSC-444","CMSC-446","CMSC-448","CMSC-451","CMSC-452","CMSC-453",
+	"CMSC-455","CMSC-456","CMSC-457","CMSC-461","CMSC-465","CMSC-466",
+	"CMSC-471","CMSC-473","CMSC-475","CMSC-476","CMSC-477","CMSC-478",
+	"CMSC-479","CMSC-481","CMSC-483","CMSC-484","CMSC-486","CMSC-487",
+	"CMSC-491","CMSC-493","CMSC-495","CMSC-498","CMSC-499");
+
+$coursedivids = array("cs201","cs202","cs203","cs304","cs313","cs331",
+	"cs341","cs411","cs421","cs441","cs447","ma151","ma152","ma221",
+	"st355","cs345","cs404","cs426","cs427","cs431","cs432","cs433",
+	"cs435","cs436","cs437","cs442","cs443","cs444","cs446","cs448",
+	"cs451","cs452","cs453","cs455","cs456","cs457","cs461","cs465",
+	"cs466","cs471","cs473","cs475","cs476","cs477","cs478","cs479",
+	"cs481","cs483","cs484","cs486","cs487","cs491","cs493","cs495",
+	"cs498","cs499");
+
+// Get posted data for each course
+$courselength = count($courseids);
+for($x=0; $x<$courselength; $x++){
+	if (!empty($_POST[$coursedivids[$x]])) {
+		array_push($taken, $courseids[$x]);
+	}
 }
 
-//Electives
-if (!empty($_POST["cs345"])) {
-	array_push($taken, "CMSC-345");
-}
-if (!empty($_POST["cs404"])) {
-	array_push($taken, "CMSC-404");
-}
-if (!empty($_POST["cs426"])) {
-	array_push($taken, "CMSC-426");
-}
-if (!empty($_POST["cs427"])) {
-	array_push($taken, "CMSC-427");
-}
-if (!empty($_POST["cs431"])) {
-	array_push($taken, "CMSC-431");
-}
-if (!empty($_POST["cs432"])) {
-	array_push($taken, "CMSC-432");
-}
-if (!empty($_POST["cs433"])) {
-	array_push($taken, "CMSC-433");
-}
-if (!empty($_POST["cs435"])) {
-	array_push($taken, "CMSC-435");
-}
-if (!empty($_POST["cs436"])) {
-	array_push($taken, "CMSC-436");
-}
-if (!empty($_POST["cs437"])) {
-	array_push($taken, "CMSC-437");
-}
-if (!empty($_POST["cs442"])) {
-	array_push($taken, "CMSC-442");
-}
-if (!empty($_POST["cs443"])) {
-	array_push($taken, "CMSC-443");
-}
-if (!empty($_POST["cs444"])) {
-	array_push($taken, "CMSC-444");
-}
-if (!empty($_POST["cs446"])) {
-	array_push($taken, "CMSC-446");
-}
-if (!empty($_POST["cs448"])) {
-	array_push($taken, "CMSC-448");
-}
-if (!empty($_POST["cs451"])) {
-	array_push($taken, "CMSC-451");
-}
-if (!empty($_POST["cs452"])) {
-	array_push($taken, "CMSC-452");
-}
-if (!empty($_POST["cs453"])) {
-	array_push($taken, "CMSC-453");
-}
-if (!empty($_POST["cs455"])) {
-	array_push($taken, "CMSC-455");
-}
-if (!empty($_POST["cs456"])) {
-	array_push($taken, "CMSC-456");
-}
-if (!empty($_POST["cs457"])) {
-	array_push($taken, "CMSC-457");
-}
-if (!empty($_POST["cs461"])) {
-	array_push($taken, "CMSC-461");
-}
-if (!empty($_POST["cs465"])) {
-	array_push($taken, "CMSC-465");
-}
-if (!empty($_POST["cs466"])) {
-	array_push($taken, "CMSC-466");
-}
-if (!empty($_POST["cs471"])) {
-	array_push($taken, "CMSC-471");
-}
-if (!empty($_POST["cs473"])) {
-	array_push($taken, "CMSC-473");
-}
-if (!empty($_POST["cs475"])) {
-	array_push($taken, "CMSC-475");
-}
-if (!empty($_POST["cs476"])) {
-	array_push($taken, "CMSC-476");
-}
-if (!empty($_POST["cs477"])) {
-	array_push($taken, "CMSC-477");
-}
-if (!empty($_POST["cs478"])) {
-	array_push($taken, "CMSC-478");
-}
-if (!empty($_POST["cs479"])) {
-	array_push($taken, "CMSC-479");
-}
-if (!empty($_POST["cs481"])) {
-	array_push($taken, "CMSC-481");
-}
-if (!empty($_POST["cs483"])) {
-	array_push($taken, "CMSC-483");
-}
-if (!empty($_POST["cs484"])) {
-	array_push($taken, "CMSC-484");
-}
-if (!empty($_POST["cs486"])) {
-	array_push($taken, "CMSC-486");
-}
-if (!empty($_POST["cs487"])) {
-	array_push($taken, "CMSC-487");
-}
-if (!empty($_POST["cs491"])) {
-	array_push($taken, "CMSC-491");
-}
-if (!empty($_POST["cs493"])) {
-	array_push($taken, "CMSC-493");
-}
-if (!empty($_POST["cs495"])) {
-	array_push($taken, "CMSC-495");
-}
-if (!empty($_POST["cs498"])) {
-	array_push($taken, "CMSC-498");
-}
-if (!empty($_POST["cs499"])) {
-	array_push($taken, "CMSC-499");
-}
 
 $required = array("CMSC-201","MATH-151","CMSC-202","CMSC-203","MATH-152",
 	"CMSC-331","CMSC-341","CMSC-313","MATH-221", "CMSC-304", "CMSC-411",
@@ -205,7 +63,7 @@ for($x=0; $x<$reqlength; $x++){
 	}
 }
 
-// Determine how many 400 level electives needed
+// Determine how many 400 level electives still needed
 $upperLevels = 5;
 $needlength = count($need);
 for($x=0; $x<$needlength; $x++){
@@ -236,6 +94,7 @@ for($x=0; $x<$needlength; $x++){
 echo '</table>';
 
 ?>
+
 <br>
 <div id="classSection">Note: Any course labeled CMSC-4XX is any 400 level elective for Computer Science</div>
 
